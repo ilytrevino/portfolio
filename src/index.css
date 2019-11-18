@@ -1,10 +1,11 @@
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: CircularStd;
-  height: 250vh;
+  height: 350vh;
   background-image: url("./img/aurora.jpeg");
   background-size: cover;
   background-color: #cccccc;
@@ -22,7 +23,7 @@ li {
 }
 
 .contact {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 a {
@@ -33,28 +34,4 @@ a {
 
 a:hover {
   color: #35ca8e;
-}
-
-a:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #35ca8e;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-a:hover:after {
-  width: 100%;
-  left: 0;
-}
-
-.me {
-  display: block;
-  min-width: 0;
-  height: auto;
-  max-width: 100%;
 }

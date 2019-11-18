@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flex, Heading, Text } from 'rebass';
 
-const AboutMe = () => {
+const Contact = () => {
   return(
     <React.Fragment>
-      <Flex id="about" height="100vh" backgroundColor="#2b2c2c">
+      <Flex id="contact" height="50vh" backgroundColor="#303030">
 
       </Flex>
     </React.Fragment>
   )
 }
 
-export default AboutMe;
+export default Contact;
