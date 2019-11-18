@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// background-color: #2b2c2c;
 const Nav = styled('div')`
-  background-color: #2b2c2c;
   display: flex;
   align-items: right;
   padding: 10px 0;
@@ -16,7 +16,7 @@ const Navbar = () => {
         <ul>
           <li><a href="">About me</a></li>
           <li><a href="">Portfolio</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a className="contact" href="">Contact</a></li>
         </ul>
       </Nav>
     </React.Fragment>

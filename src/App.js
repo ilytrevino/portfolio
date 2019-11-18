@@ -1,4 +1,5 @@
 import React from 'react';
+import "circular-std";
 import './index.css';
 import Welcome from './components/Welcome';
 import Navigation from './components/Navigation.jsx';

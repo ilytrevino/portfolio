@@ -3,9 +3,11 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  height: 100vh;
-  background: #e9ebee;
+  font-family: CircularStd;
+  height: 250vh;
+  background-image: url("./img/aurora.jpeg");
+  background-size: cover;
+  background-color: #cccccc;
   margin: 0;
 }
 
@@ -14,18 +16,40 @@ ul {
 }
 
 li {
-  font-size: 20px;
+  font-size: 25px;
   display: inline-flex;
-  padding: 0 20px;
+  padding: 5px 30px;
+}
+
+.contact {
+  padding-right: 30px;
 }
 
 a {
   color: white;
   text-decoration: none;
+  position: relative;
 }
 
 a:hover {
-  color: #ffb848;
+  color: #35ca8e;
+}
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #35ca8e;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .me {
