@@ -13,15 +13,13 @@ const Welcome = () => (
       <Flex
         flexDirection="column"
         color="white"
+        justifyContent="center"
         m="20vh 5vw"
         flex={1}
         >
-        <Text fontSize={30} pb={1} pt={5}>
-          Hello
-        </Text>
         <Heading
           fontSize={35} pb={1}>
-          I'm Ily Treviño
+          Ily Treviño
         </Heading>
         <Text fontSize={30} pb={1}>
           Front-end developer

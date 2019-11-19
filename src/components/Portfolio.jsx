@@ -6,14 +6,19 @@ import Project from './Project.jsx';
 const Portfolio = () => {
   return(
     <React.Fragment>
-      <Flex id="portfolio" flexDirection="column">
+      <Flex
+        marginBottom="20px"
+        id="portfolio"
+        flexDirection="column"
+        min-height="100vh"
+      >
         <div id="wrap">
           <span id="projects">Projects</span>
         </div>
         <Flex
-          height="100vh"
+          flexWrap="wrap"
           flexDirection="row"
-          alignItems="flex-start"
+          alignItems="center"
           justifyContent="center"
         >
           <Project

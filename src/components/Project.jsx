@@ -29,7 +29,7 @@ const Tag = styled('p')`
 const Project = (props) => {
   return(
     <React.Fragment>
-      <Flex flexDirection="column" margin="20px">
+      <Flex flexWrap="wrap" flexDirection="column" margin="20px">
         <a href={props.link} target="_blank">
           <img className="cover" src={props.src} />
         </a>
