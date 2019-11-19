@@ -69,6 +69,12 @@ span:after {
 	opacity: 0;
 	animation: cursor 1s infinite;
 }
+
+#projects {
+  color: white;
+  margin-left: 20px;
+}
+
 @keyframes cursor {
 	0% {
 		opacity: 0;
@@ -100,5 +106,20 @@ span:after {
 	vertical-align: middle;
 }
 
+.cover {
+  object-fit: cover;
+  height: 25vh;
+}
+
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.2); }
+
+.cover {
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 1px;
+}
+
+.cover:hover {
+  box-shadow: 0 0 8px 3px rgba(153, 225, 224, 1);
+}
