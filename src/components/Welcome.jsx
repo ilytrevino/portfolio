@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex, Heading, Text } from 'rebass';
+import Navigation from './Navigation.jsx';
 
 const Layout = styled(Flex)({
   height: "100vh"
@@ -8,11 +9,12 @@ const Layout = styled(Flex)({
 
 const Welcome = () => (
   <React.Fragment>
-    <Layout>
+    <Layout id="home">
       <Flex
         flexDirection="column"
         color="white"
         m="20vh 5vw"
+        flex={1}
         >
         <Text fontSize={30} pb={1} pt={5}>
           Hello
@@ -25,9 +27,7 @@ const Welcome = () => (
           Front-end developer
         </Text>
       </Flex>
-      <Flex>
-
-      </Flex>
+      <Navigation />
     </Layout>
   </React.Fragment>
 );

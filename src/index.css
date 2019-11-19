@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -5,7 +7,7 @@ html {
 
 body {
   font-family: CircularStd;
-  height: 350vh;
+  height: 340vh;
   background-image: url("./img/aurora.jpeg");
   background-size: cover;
   background-color: #cccccc;
@@ -32,6 +34,71 @@ a {
   position: relative;
 }
 
-a:hover {
+.nav a:hover {
   color: #35ca8e;
 }
+
+.nav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #35ca8e;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.simple-linear {
+  background: linear-gradient(to top, #0c0d18, transparent);
+}
+
+span {
+  font-family:Khula;
+	font-size: 30px;
+}
+
+span:after {
+	content:"_";
+	opacity: 0;
+	animation: cursor 1s infinite;
+}
+@keyframes cursor {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#contact {
+  display: flex;
+  text-align: center;
+  padding-top: 5vh;
+}
+
+#wrap {
+	box-sizing: border-box;
+	display: flex;
+  margin: 20px auto;
+	vertical-align: middle;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.2); }

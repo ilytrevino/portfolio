@@ -11,7 +11,7 @@ const Nav = styled('div')`
 const Navbar = () => {
   return (
     <React.Fragment>
-      <Nav>
+      <Nav className="nav">
         <ul>
           <li><a href="#about">About me</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
