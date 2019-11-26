@@ -32,7 +32,7 @@ const Contact = () => {
           <a href="https://www.linkedin.com/in/ilytrevino/" target="_blank">
             <IconImage className="grow" src="/in.png" />
           </a>
-          <a href="mailto:ily,trevino@live.com?subject=Subject&body=message%20goes%20here" target="_blank">
+          <a href="mailto:ily,trevino@gmail.com?subject=Subject&body=message%20goes%20here" target="_blank">
             <IconImage className="grow" src="/email.png" />
           </a>
         </div>
